@@ -1,0 +1,17 @@
+.headerText{
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.header{
+  height: 40px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
