@@ -9,6 +9,7 @@ class Question extends React.Component {
     this.state = {
       checkedState: this.props.checkState,
       chosenAnswer: '',
+      flag: 0,
     };
   }
 
@@ -23,6 +24,10 @@ class Question extends React.Component {
             value={JSON.parse(this.props.options)[key]}
             checked={this.state.checkedState === modifiedKey}
             onChange={() => {
+              if ((this.state.flag === 0) && (this.state.checkedState === '0')) {
+                this.setState({ flag: 1 });
+                this.props.updateCount();
+              }
               this.setState(
 {
  checkedState: modifiedKey,

@@ -10,12 +10,17 @@ class QuestionContainer extends React.Component {
       questions: [],
     };
   }
+
   componentDidMount() {
     fetch('/getQuestions').then(resp => resp.json()).then((data) => {
       this.props.updateTotal(data.length);
-      this.setState({ questions: data });
+      this.props.setCount(data.length - this.props.prevResponses.length);
+      this.setState({
+        questions: data,
+      });
     });
   }
+
 
   render() {
     const allQuestions = this.state.questions.map((q, i) => {
@@ -37,6 +42,7 @@ class QuestionContainer extends React.Component {
         username={this.props.username}
         checkState={checkState}
         id={i}
+        updateCount={this.props.updateCount}
       />);
     });
     return (

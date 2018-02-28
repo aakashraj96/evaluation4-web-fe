@@ -3,12 +3,22 @@ import PropTypes from 'prop-types';
 import './ScoreCard.css';
 
 
-const ScoreCard = props => (
-  <div>
-    <h3> {props.username} </h3>
-    <h4> {props.score} </h4>
-  </div>
-);
+class ScoreCard extends React.Component {
+  render() {
+    const localStyle = {};
+    if (this.props.originalUsername === this.props.username) {
+      localStyle.backgroundColor = '#FF0000';
+    } else {
+      localStyle.backgroundColor = '#44C7F5';
+    }
+    return (
+      <div className="scoreCard" style={localStyle}>
+        <h3> {this.props.index + 1}. {this.props.username} </h3>
+        <h3> {this.props.score} </h3>
+      </div>
+    );
+  }
+}
 
 // ScoreCard.propTypes = {
 //   text: PropTypes.string.isRequired,

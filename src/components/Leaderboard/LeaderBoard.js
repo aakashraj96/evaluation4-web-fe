@@ -17,9 +17,9 @@ class LeaderBoard extends React.Component {
     });
   }
   render() {
-    const scores = this.state.leaderBoard.map(score => (<ScoreCard username={score.username} score={score.score} />));
+    const scores = this.state.leaderBoard.map((score, i) => (<ScoreCard username={score.username} score={score.score} key={i} index={i} originalUsername={this.props.username} />));
     return (
-      <div>
+      <div className="leadingScores">
         <h1> LeaderBoard </h1>
         {scores}
       </div>

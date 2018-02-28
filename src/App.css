@@ -4,3 +4,11 @@
   flex-direction: column;
   font-family: "Arial", Arial, sans-serif;
 }
+
+.leaderBoard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
