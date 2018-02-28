@@ -5,17 +5,30 @@ import Button from '../Button/Button';
 
 const Form = props => (
   <div className="form">
-    <p> Username: </p>
-    <input
-      type="text"
-      name="username"
-      onChange={(event) => {
+    <div className="centerDiv">
+      <div className="leftDiv" >
+        <div className="centerFlex">
+          <p className="blackText"> Welcome </p>
+          <p className="blackText"> to </p>
+          <p className="quizzy"> Quizzy! </p>
+        </div>
+      </div>
+      <div className="rightDiv">
+        <div className="leftAlign">
+          <h2 > Login </h2>
+          <p > Username: </p>
+        </div>
+        <input
+          className="inputBox"
+          type="text"
+          name="username"
+          onChange={(event) => {
       props.updateUsername(event.target.value);
     }}
-    />
-    <Button
-      text="Login"
-      clickHandler={() => {
+        />
+        <Button
+          text="Login"
+          clickHandler={() => {
       fetch('/login', {
         method: 'post',
         headers: {
@@ -31,7 +44,10 @@ const Form = props => (
         props.updatePrevResponse(data.prevResponse);
       });
     }}
-    />
+        />
+      </div>
+
+    </div>
   </div>
 );
 

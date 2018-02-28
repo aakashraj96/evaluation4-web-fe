@@ -80,10 +80,16 @@ class App extends Component {
     } else if (this.state.pageNumber === 2) {
       return (
         <div className="main">
-          <Header text="Quizzy" username={this.state.username} />
+          <Header text="Quizzy" username={`Hello ${this.state.username}`} />
           <br />
           <h2>{this.state.score}/{this.state.total}</h2>
           <LeaderBoard />
+          <Button
+            text="Play Again"
+            clickHandler={() => {
+            this.changePageNumber(0);
+          }}
+          />
         </div>
       );
     }

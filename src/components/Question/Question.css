@@ -1,0 +1,32 @@
+.questionBox{
+  width:95%;
+  margin:20px;
+  border-width: medium ;
+  border-style: solid;
+  border-color: black;
+}
+
+.question{
+  background-color: 	#44C7F5;
+  border-width: thin ;
+  border-style: solid;
+  border-color: black;
+}
+
+.qText{
+  font-size: 15px;
+  text-align: center;
+}
+
+.innerBox{
+  border-width: thin ;
+  border-style: solid;
+  border-color: black;
+}
+
+.questionText{
+  font-size: 15px;
+  padding: 1px;
+  margin-left: 10px;
+  font-weight: bold;
+}

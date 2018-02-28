@@ -4,7 +4,7 @@ import './Button.css';
 
 
 const Button = props => (
-  <button type="button" onClick={props.clickHandler}>{props.text}</button>
+  <button type="button" className="whiteButton" onClick={props.clickHandler}><h2>{props.text}</h2></button>
 );
 
 Button.propTypes = {

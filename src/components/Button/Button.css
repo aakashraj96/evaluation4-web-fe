@@ -1,0 +1,8 @@
+.whiteButton{
+  border-style: solid;
+  border-radius: 15px;
+  border-width: medium;
+  border-color: black;
+  width: 60%;
+  /* margin: 20px; */
+}

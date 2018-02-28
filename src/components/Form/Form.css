@@ -1,3 +1,53 @@
 .form{
-  margin-top: 40px;
+  margin-top: 60px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16214E;
+}
+
+.centerDiv{
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftDiv{
+  width:50%;
+background-color: 	#44C7F5;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.rightDiv{
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerFlex{
+  text-align: center;
+}
+
+.blackText{
+  font-size: 40px;
+}
+
+.quizzy{
+  font-size: 60px;
+  color: white;
+}
+
+.inputBox{
+  width:80%;
+  font-size: 30px;
+  border-style: solid;
+  margin-bottom: 20px;
+  /* margin-left: 10px; */
 }

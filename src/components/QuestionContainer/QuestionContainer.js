@@ -36,10 +36,11 @@ class QuestionContainer extends React.Component {
         qid={q.questionid}
         username={this.props.username}
         checkState={checkState}
+        id={i}
       />);
     });
     return (
-      <div>
+      <div className="questionContainer">
         <h1> Question: </h1>
         {allQuestions}
       </div>

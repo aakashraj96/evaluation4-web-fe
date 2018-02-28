@@ -51,9 +51,14 @@ class Question extends React.Component {
     });
     // console.log('Options are: ', Object.keys(JSON.parse(props.options)));
     return (
-      <div>
-        <h2> {this.props.ques} </h2>
-        <h3> {checkboxes} </h3>
+      <div className="questionBox">
+        <div className="innerBox">
+          <p className="questionText">Question {this.props.id + 1}</p>
+        </div>
+        <div className="question">
+          <p className="qText"> {this.props.ques} </p>
+        </div>
+        <p className="questionText" > {checkboxes} </p>
       </div>
     );
   }
