@@ -67,7 +67,7 @@ class App extends Component {
       );
     } else if (this.state.pageNumber === 1) {
       return (
-        <div className="main">
+        <div className="questionsPage">
           <Header text="Quizzy" username={`Hello ${this.state.username}`} />
           <QuestionContainer
             username={this.state.username}
@@ -76,6 +76,7 @@ class App extends Component {
             setCount={this.setCount}
             updateCount={this.updateCount}
           />
+
           <Button
             text="Calculate"
             clickHandler={() => {

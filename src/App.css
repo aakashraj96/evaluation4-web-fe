@@ -12,3 +12,10 @@
   align-items: center;
   margin-top: 60px;
 }
+
+.questionsPage{
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  font-family: "Arial", Arial, sans-serif;
+}

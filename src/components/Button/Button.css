@@ -4,5 +4,7 @@
   border-width: medium;
   border-color: black;
   width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   /* margin: 20px; */
 }
